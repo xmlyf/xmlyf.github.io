@@ -3,7 +3,7 @@ title: 你好，世界
 tag: 思考
 date: 2025 年 1 月 20 日
 readTime: 3
-author: 林墨
+author: 郭万锋
 # image: https://picsum.photos/seed/hello-world-2025/800/400.jpg
 image: /images/helloworld.jpg
 ---

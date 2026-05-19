@@ -3,7 +3,7 @@ title: 极简设计的哲学：少即是多的艺术
 tag: 设计
 date: 2025 年 1 月 5 日
 readTime: 8
-author: 林墨
+author: 郭万锋
 image: https://picsum.photos/seed/minimal-phi/800/400.jpg
 ---
 ## 极简 ≠ 简陋

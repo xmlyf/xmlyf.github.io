@@ -3,7 +3,7 @@ title: Vue 3 Composition API 深度指南
 tag: 前端
 date: 2025 年 1 月 10 日
 readTime: 15
-author: 林墨
+author: 郭万锋
 image: https://picsum.photos/seed/vue3-comp-api/800/400.jpg
 ---
 ## 为什么需要 Composition API？

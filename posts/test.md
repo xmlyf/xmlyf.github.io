@@ -3,7 +3,7 @@ title: 文章标题
 tag: 前端
 date: 2025 年 1 月 20 日
 readTime: 10
-author: 林墨
+author: 郭万锋
 image: https://picsum.photos/seed/my-article/800/400.jpg
 ---
 

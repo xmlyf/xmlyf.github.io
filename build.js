@@ -126,7 +126,7 @@ console.log(`  │   🖼️  ${imgCount} 张图片已复制                    
 console.log('  │                                      │');
 console.log('  │   输出目录: docs/                     │');
 console.log('  │                                      │');
-console.log('  │   双击 docs/index.html 即可预览       │');
+console.log('  │   双击 docs/index.html 即可预览,,       │');
 console.log('  │   或运行 node server.js              │');
 console.log('  └──────────────────────────────────────┘');
 console.log('');

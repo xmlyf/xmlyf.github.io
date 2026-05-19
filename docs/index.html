@@ -181,7 +181,7 @@
                 <div class="flex items-center gap-3">
                   <div class="w-10 h-10 rounded-full bg-[#1A4D2E] flex items-center justify-center text-white font-serif-display font-bold text-sm">{{ (articles[0].author || '墨')[0] }}</div>
                   <div>
-                    <div class="text-sm font-medium">{{ articles[0].author || '林墨' }}</div>
+                    <div class="text-sm font-medium">{{ articles[0].author || '郭万锋' }}</div>
                     <div class="text-xs text-[#888888]">{{ articles[0].readTime || 5 }} 分钟阅读</div>
                   </div>
                 </div>
@@ -270,7 +270,7 @@
               <div class="absolute -right-4 top-8 bg-white p-4 rounded-sm shadow-xl">
                 <div class="text-xs font-semibold tracking-[0.15em] uppercase text-[#1A4D2E] mb-2">Tech Stack</div>
                 <div class="flex flex-wrap gap-1.5 max-w-[140px]">
-                  <span v-for="s in ['Vue','React','Node','TS','Go','Figma']" :key="s" class="px-2 py-0.5 text-[10px] font-mono font-medium bg-[#F5F4F0] border border-[rgba(38,38,36,0.1)] rounded-sm text-[#5A5852]">{{ s }}</span>
+                  <span v-for="s in ['Java','DB','Linux','Docker','Nginx','Vue','AI']" :key="s" class="px-2 py-0.5 text-[10px] font-mono font-medium bg-[#F5F4F0] border border-[rgba(38,38,36,0.1)] rounded-sm text-[#5A5852]">{{ s }}</span>
                 </div>
               </div>
             </div>
@@ -279,11 +279,12 @@
             <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#CC5500] mb-4 block">关于我</span>
             <h2 class="font-serif-display text-4xl md:text-5xl font-medium tracking-tight mb-6">热爱创造的<br>全栈开发者</h2>
             <div class="space-y-4 text-[#5A5852] leading-relaxed mb-8">
-              <p>你好，我是林墨，一名全栈开发者。这个博客由 Markdown 驱动——文章存放在 <code class="font-mono text-sm bg-[#1A4D2E]/10 text-[#CC5500] px-1.5 py-0.5 rounded">posts/</code> 目录，零数据库，纯文件管理。</p>
+              <p>你好，我是郭万锋，一名全栈开发者。这个博客由 Markdown 驱动——文章存放在 <code class="font-mono text-sm bg-[#1A4D2E]/10 text-[#CC5500] px-1.5 py-0.5 rounded">posts/</code> 目录，零数据库，纯文件管理。</p>
               <p>相信优秀的产品源于技术与美学的融合。工作之余，热衷探索新技术和写作。</p>
+              <p><a href="https://blog.csdn.net/weixin_48611928" target="_blank">我的CSDN</a></p>
             </div>
             <div class="grid grid-cols-2 gap-4 mb-8">
-              <div v-for="info in [{l:'location',v:'上海'},{l:'experience',v:'6 年+'},{l:'focus',v:'Web 全栈'},{l:'status',v:'open to work'}]" :key="info.l" class="p-4 bg-[#F5F4F0] rounded-sm border border-[rgba(38,38,36,0.05)]">
+              <div v-for="info in [{l:'location',v:'深圳'},{l:'experience',v:'9 年+'},{l:'focus',v:'Java 全栈'},{l:'status',v:'open to work'}]" :key="info.l" class="p-4 bg-[#F5F4F0] rounded-sm border border-[rgba(38,38,36,0.05)]">
                 <div class="text-xs text-[#888888] mb-1 font-mono">{{ info.l }}</div>
                 <div class="text-sm font-medium">{{ info.v }}</div>
               </div>
@@ -307,8 +308,8 @@
             <iconify-icon icon="lucide:mail" class="text-[#CC5500] mb-6" width="28"></iconify-icon>
             <h3 class="font-serif-display text-3xl font-medium text-white tracking-tight mb-4">联系我</h3>
             <p class="text-[#9EA08F] leading-relaxed mb-8">有问题或合作意向？随时给我发邮件</p>
-            <a href="mailto:hello@mojiblog.dev" class="inline-flex items-center gap-2 bg-[#CC5500] text-white font-medium px-8 py-4 rounded-sm hover:bg-[#B34900] transition-all duration-150">
-              <iconify-icon icon="lucide:send" width="16"></iconify-icon> hello@mojiblog.dev
+            <a href="mailto:xmlyf@foxmail.com" class="inline-flex items-center gap-2 bg-[#CC5500] text-white font-medium px-8 py-4 rounded-sm hover:bg-[#B34900] transition-all duration-150">
+              <iconify-icon icon="lucide:send" width="16"></iconify-icon> xmlyf@foxmail.com
             </a>
           </div>
         </div>
@@ -322,7 +323,7 @@
           <div class="w-8 h-8 bg-[#1A4D2E] rounded-sm flex items-center justify-center"><span class="text-white font-serif-display text-sm font-bold">墨</span></div>
           <span class="font-serif-display text-lg tracking-tight text-white">墨迹博客</span>
         </div>
-        <p class="text-xs text-[#787870] flex items-center gap-1">© 2025 墨迹博客 · 用 <iconify-icon icon="lucide:heart" width="12" class="text-[#CC5500]"></iconify-icon> 和 Markdown 构建</p>
+        <p class="text-xs text-[#787870] flex items-center gap-1">© 2026 墨迹博客 · 用 <iconify-icon icon="lucide:heart" width="12" class="text-[#CC5500]"></iconify-icon> 和 Markdown 构建</p>
       </div>
     </footer>
   </template>
@@ -344,7 +345,7 @@
           <div class="flex items-center gap-3 pb-8 border-b border-[rgba(38,38,36,0.1)]">
             <div class="w-10 h-10 rounded-full bg-[#1A4D2E] flex items-center justify-center text-white font-serif-display font-bold text-sm">{{ (currentArticle.author || '墨')[0] }}</div>
             <div>
-              <div class="text-sm font-medium">{{ currentArticle.author || '林墨' }}</div>
+              <div class="text-sm font-medium">{{ currentArticle.author || '郭万锋' }}</div>
               <div class="text-xs text-[#888888] font-mono">posts/{{ currentArticle.slug }}.md</div>
             </div>
           </div>
@@ -381,7 +382,7 @@
 </div>
 
 <!-- ★ 构建脚本会把文章数据注入到这里 -->
-<script id="blog-data" type="application/json">[{"slug":"minimal-design","title":"极简设计的哲学：少即是多的艺术","tag":"设计","date":"2025 年 1 月 5 日","readTime":8,"author":"林墨","image":"https://picsum.photos/seed/minimal-phi/800/400.jpg","excerpt":"极简 ≠ 简陋\r\n极简设计的精髓不在于减少元素的数量，而在于提升每个元素的必要性。\r\n 每一行代码、每一个像素、每一处留白都应当有它存在的理由。\r\n Dieter Rams 的十条原则\r\n1. 好设计是创新的\r\n2. 好设计使产品有用\r\n3. 好设计是美观的\r","rawBody":"\r\n## 极简 ≠ 简陋\r\n极简设计的精髓不在于减少元素的数量，而在于**提升每个元素的必要性**。\r\n> 每一行代码、每一个像素、每一处留白都应当有它存在的理由。\r\n## Dieter Rams 的十条原则\r\n1. 好设计是创新的\r\n2. 好设计使产品有用\r\n3. 好设计是美观的\r\n4. 好设计使产品易被理解\r\n5. 好设计是谦逊的\r\n6. 好设计是诚实的\r\n7. 好设计是持久的\r\n8. 好设计是彻底的\r\n9. 好设计是环保的\r\n10. 好设计是尽可能少的设计\r\n## Web 中的极简\r\n- **清晰的视觉层次** — 用户第一眼看到最重要的信息\r\n- **克制的色彩** — 不超过 3 个主色\r\n- **有意义的留白** — 留白不是空白，是呼吸\r\n- **零思考的交互** — 路径要短，反馈要快"},{"slug":"hello-world","title":"你好，世界","tag":"思考","date":"2025 年 1 月 20 日","readTime":3,"author":"林墨","image":"./images/helloworld.jpg","excerpt":"欢迎来到墨迹博客\r\n这是第一篇文章。这个博客由 Markdown 驱动，文章存放在 posts/ 目录。\r\n 如何添加新文章？\r\n1. 在 posts/ 目录创建 .md 文件\r\n2. 文件顶部添加 frontmatter 元数据\r\n3. 下方用 Markdo","rawBody":"\r\n## 欢迎来到墨迹博客\r\n这是第一篇文章。这个博客由 **Markdown** 驱动，文章存放在 `posts/` 目录。\r\n### 如何添加新文章？\r\n1. 在 `posts/` 目录创建 `.md` 文件\r\n2. 文件顶部添加 frontmatter 元数据\r\n3. 下方用 Markdown 写正文\r\n4. 刷新页面即可看到\r\n```markdown\r\n---\r\ntitle: 文章标题\r\ntag: 分类\r\ndate: 2025 年 1 月 20 日\r\n---\r\n正文内容...\r\n```\r\n> 就这么简单。"},{"slug":"test","title":"文章标题","tag":"前端","date":"2025 年 1 月 20 日","readTime":10,"author":"林墨","image":"https://picsum.photos/seed/my-article/800/400.jpg","excerpt":"正文从这里开始\r\n\r\n用 Markdown 写作，支持所有标准语法：\r\n 代码块、表格、引用...","rawBody":"\r\n\r\n## 正文从这里开始\r\n\r\n用 Markdown 写作，支持所有标准语法：\r\n- 代码块、表格、引用...\r\n"},{"slug":"vue3-composition-api","title":"Vue 3 Composition API 深度指南","tag":"前端","date":"2025 年 1 月 10 日","readTime":15,"author":"林墨","image":"https://picsum.photos/seed/vue3-comp-api/800/400.jpg","excerpt":"为什么需要 Composition API？\r\nOptions API 把逻辑按选项类型分散到 data、methods、computed 中，当组件变得复杂时，相关的逻辑被拆得七零八落。\r\nComposition API 的核心思想是：将相关逻辑组织在一起。","rawBody":"\r\n## 为什么需要 Composition API？\r\nOptions API 把逻辑按选项类型分散到 `data`、`methods`、`computed` 中，当组件变得复杂时，**相关的逻辑被拆得七零八落**。\r\nComposition API 的核心思想是：**将相关逻辑组织在一起**。\r\n## 核心概念\r\n### ref — 基本类型的响应式\r\n```js\r\nimport { ref } from 'vue'\r\nconst count = ref(0)\r\nconsole.log(count.value) // 0\r\ncount.value++\r\n```\r\n### reactive — 对象的响应式\r\n```js\r\nimport { reactive } from 'vue'\r\nconst state = reactive({\r\n  user: null,\r\n  loading: false\r\n})\r\n```\r\n### computed — 派生状态\r\n```js\r\nconst fullName = computed(() => `${first.value} ${last.value}`)\r\n```\r\n## Composable 函数\r\n将逻辑提取为可复用的函数：\r\n```js\r\n// useCounter.js\r\nexport function useCounter(initial = 0) {\r\n  const count = ref(initial)\r\n  const increment = () => count.value++\r\n  const decrement = () => count.value--\r\n  return { count, increment, decrement }\r\n}\r\n```\r\n> 按功能模块组织 composable：useAuth、useCart、useTheme……每个封装自己的状态和逻辑，对外暴露清晰接口。"}]</script>
+<script id="blog-data" type="application/json">[{"slug":"minimal-design","title":"极简设计的哲学：少即是多的艺术","tag":"设计","date":"2025 年 1 月 5 日","readTime":8,"author":"郭万锋","image":"https://picsum.photos/seed/minimal-phi/800/400.jpg","excerpt":"极简 ≠ 简陋\r\n极简设计的精髓不在于减少元素的数量，而在于提升每个元素的必要性。\r\n 每一行代码、每一个像素、每一处留白都应当有它存在的理由。\r\n Dieter Rams 的十条原则\r\n1. 好设计是创新的\r\n2. 好设计使产品有用\r\n3. 好设计是美观的\r","rawBody":"\r\n## 极简 ≠ 简陋\r\n极简设计的精髓不在于减少元素的数量，而在于**提升每个元素的必要性**。\r\n> 每一行代码、每一个像素、每一处留白都应当有它存在的理由。\r\n## Dieter Rams 的十条原则\r\n1. 好设计是创新的\r\n2. 好设计使产品有用\r\n3. 好设计是美观的\r\n4. 好设计使产品易被理解\r\n5. 好设计是谦逊的\r\n6. 好设计是诚实的\r\n7. 好设计是持久的\r\n8. 好设计是彻底的\r\n9. 好设计是环保的\r\n10. 好设计是尽可能少的设计\r\n## Web 中的极简\r\n- **清晰的视觉层次** — 用户第一眼看到最重要的信息\r\n- **克制的色彩** — 不超过 3 个主色\r\n- **有意义的留白** — 留白不是空白，是呼吸\r\n- **零思考的交互** — 路径要短，反馈要快"},{"slug":"hello-world","title":"你好，世界","tag":"思考","date":"2025 年 1 月 20 日","readTime":3,"author":"郭万锋","image":"./images/helloworld.jpg","excerpt":"欢迎来到墨迹博客\r\n这是第一篇文章。这个博客由 Markdown 驱动，文章存放在 posts/ 目录。\r\n 如何添加新文章？\r\n1. 在 posts/ 目录创建 .md 文件\r\n2. 文件顶部添加 frontmatter 元数据\r\n3. 下方用 Markdo","rawBody":"\r\n## 欢迎来到墨迹博客\r\n这是第一篇文章。这个博客由 **Markdown** 驱动，文章存放在 `posts/` 目录。\r\n### 如何添加新文章？\r\n1. 在 `posts/` 目录创建 `.md` 文件\r\n2. 文件顶部添加 frontmatter 元数据\r\n3. 下方用 Markdown 写正文\r\n4. 刷新页面即可看到\r\n```markdown\r\n---\r\ntitle: 文章标题\r\ntag: 分类\r\ndate: 2025 年 1 月 20 日\r\n---\r\n正文内容...\r\n```\r\n> 就这么简单。"},{"slug":"test","title":"文章标题","tag":"前端","date":"2025 年 1 月 20 日","readTime":10,"author":"郭万锋","image":"https://picsum.photos/seed/my-article/800/400.jpg","excerpt":"正文从这里开始\r\n\r\n用 Markdown 写作，支持所有标准语法：\r\n 代码块、表格、引用...","rawBody":"\r\n\r\n## 正文从这里开始\r\n\r\n用 Markdown 写作，支持所有标准语法：\r\n- 代码块、表格、引用...\r\n"},{"slug":"vue3-composition-api","title":"Vue 3 Composition API 深度指南","tag":"前端","date":"2025 年 1 月 10 日","readTime":15,"author":"郭万锋","image":"https://picsum.photos/seed/vue3-comp-api/800/400.jpg","excerpt":"为什么需要 Composition API？\r\nOptions API 把逻辑按选项类型分散到 data、methods、computed 中，当组件变得复杂时，相关的逻辑被拆得七零八落。\r\nComposition API 的核心思想是：将相关逻辑组织在一起。","rawBody":"\r\n## 为什么需要 Composition API？\r\nOptions API 把逻辑按选项类型分散到 `data`、`methods`、`computed` 中，当组件变得复杂时，**相关的逻辑被拆得七零八落**。\r\nComposition API 的核心思想是：**将相关逻辑组织在一起**。\r\n## 核心概念\r\n### ref — 基本类型的响应式\r\n```js\r\nimport { ref } from 'vue'\r\nconst count = ref(0)\r\nconsole.log(count.value) // 0\r\ncount.value++\r\n```\r\n### reactive — 对象的响应式\r\n```js\r\nimport { reactive } from 'vue'\r\nconst state = reactive({\r\n  user: null,\r\n  loading: false\r\n})\r\n```\r\n### computed — 派生状态\r\n```js\r\nconst fullName = computed(() => `${first.value} ${last.value}`)\r\n```\r\n## Composable 函数\r\n将逻辑提取为可复用的函数：\r\n```js\r\n// useCounter.js\r\nexport function useCounter(initial = 0) {\r\n  const count = ref(initial)\r\n  const increment = () => count.value++\r\n  const decrement = () => count.value--\r\n  return { count, increment, decrement }\r\n}\r\n```\r\n> 按功能模块组织 composable：useAuth、useCart、useTheme……每个封装自己的状态和逻辑，对外暴露清晰接口。"}]</script>
 
 <script>
 const { createApp, ref, computed, onMounted, onUnmounted, nextTick } = Vue;
